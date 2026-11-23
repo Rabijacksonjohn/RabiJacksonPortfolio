@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9900"/>
+      <stop offset="100%" stop-color="#FF6B00"/>
+    </linearGradient>
+    <linearGradient id="netGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#00A3FF"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Dark midnight rounded background -->
+  <rect width="64" height="64" rx="16" fill="#0A0F1D"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#cloudGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Cloud Shape in AWS Orange -->
+  <path d="M45 33c0-4-3.2-7.3-7.2-7.3-1 0-2 .2-2.8.6C33.7 22.8 30.1 20 26 20c-5.5 0-10 4.5-10 10 0 .6.1 1.2.2 1.7C13.2 32.7 11 35.1 11 38c0 3.9 3.1 7 7 7h26c3.9 0 7-3.1 7-7 0-1.9-.8-3.6-2.1-4.8.1-.4.1-.8.1-1.2z" fill="url(#cloudGrad)"/>
+
+  <!-- Network Topology Circuit (Connecting nodes) -->
+  <path d="M22 36 L32 29 L42 36" stroke="#0A0F1D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 29 L32 44" stroke="#0A0F1D" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Network Circuit Nodes (Cyan glowing dots) -->
+  <circle cx="22" cy="36" r="3.2" fill="url(#netGrad)" filter="url(#glow)"/>
+  <circle cx="32" cy="29" r="3.2" fill="#FFFFFF"/>
+  <circle cx="42" cy="36" r="3.2" fill="url(#netGrad)" filter="url(#glow)"/>
+  <circle cx="32" cy="44" r="3.2" fill="url(#netGrad)" filter="url(#glow)"/>
+</svg>

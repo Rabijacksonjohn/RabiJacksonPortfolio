@@ -1,137 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jackson Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <!-- skill styles moved to index.css -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabi Jackson J | Cloud & Networking</title>
+  <meta name="description" content="Portfolio of Rabi Jackson J - MCA Graduate, AWS Cloud Practitioner Candidate, and Computer Networking Enthusiast.">
+  <meta name="author" content="Rabi Jackson J">
+
+  <!-- Browser Tab Favicon / Logo -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="profile.png">
+  <link rel="apple-touch-icon" href="profile.png">
+  <meta name="theme-color" content="#090D16">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-    <div id="title">Rabi Jackson J</div><br>
-    <!-- mobile hamburger toggle -->
-    <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="links" type="button">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-    </button>
-    <div id="links">
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#work" style="margin:0px 60px;">works</a>
-        <a href="#contact">contact</a>
-    </div>
-    </div>
 
-    <center>
-    <div id="middle">
-        <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-            Welcome — I'm a cybersecurity engineer focusing on penetration testing, incident response, and secure architecture.<br>
-            <button id="view-work" class="btn_one">view my work</button>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#home" class="brand-link">
+        <div class="brand-badge">
+          <img src="favicon.svg" alt="Rabi Jackson J Logo">
         </div>
-    </div>
-    </center>
+        <span>Rabi Jackson J</span>
+      </a>
 
-    <div id="portfolio">
-            <div id="about">
-                <h1>about.</h1>
-                <p>
-                    I'm Rabi Jackson, MCA student with hands-on experience in IT support, system troubleshooting, server setup, and basic
-cybersecurity. Skilled in Windows and Linux administration, networking fundamentals, and Python
-scripting. Passionate about maintaining secure, reliable IT infrastructure and eager to contribute to
-high-tech environments like aerospace and R&D sectors.
-                </p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="mailto:rabijacksonjohn@email.com" class="nav-btn">
+        <i class="fas fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section (Simple & Bold) -->
+  <section id="home" class="hero">
+    <div class="container hero-box">
+      <!-- Profile Photo -->
+      <div class="hero-photo-wrap">
+        <img src="profile.png" alt="Rabi Jackson J" class="hero-photo">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Available to Join</span>
+        </div>
+      </div>
+
+      <!-- Hero Statement -->
+      <div class="hero-text">
+        <div class="hero-pretitle">
+          <i class="fab fa-aws"></i> AWS Cloud Practitioner Candidate • MCA 2025
+        </div>
+
+        <h1 class="hero-title">
+          Rabi Jackson J
+        </h1>
+
+        <p class="hero-desc">
+          MCA graduate passionate about <strong>Computer Networking</strong> and <strong>AWS Cloud Infrastructure</strong>. I specialize in network protocols, packet diagnostics, and building secure AWS VPC architectures.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/rabi-jackson-j/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Rabijacksonjohn" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <button class="btn-solid copy-email-btn">
+            <i class="fas fa-copy"></i> Copy Email
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Passion for Networking -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Background</div>
+        <h2 class="section-title">I Like Networking.</h2>
+      </div>
+
+      <div class="focus-quote">
+        "Understanding how data moves—from packet headers, TCP handshakes, and routing protocols to cloud VPC subnets and firewalls—is what drives my work."
+      </div>
+
+      <p class="focus-body">
+        I recently completed my Master of Computer Applications (MCA) at Periyar Maniammai Institute of Science & Technology (GPA 7.3) after earning my BCA with First Class Distinction (GPA 8.3).
+        I am currently pursuing the <strong>AWS Certified Cloud Practitioner</strong> certification to connect my strong foundational networking skills (TCP/IP, Wireshark, Nmap, subnetting) directly with scalable cloud architectures (AWS VPC, Route Tables, NAT Gateways, Security Groups).
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">What I Work With</div>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Networking -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <div class="skill-icon icon-orange">
+              <i class="fas fa-network-wired"></i>
             </div>
-             <div id="skills">
-                 <h1>skills.</h1>   
-                <!-- cleaned: removed stray + / - diff markers and duplicate lines -->
-                <div class="skill-line" aria-label="skills and tools">
-                    <button class="skill-btn">HTML</button>
-                    <button class="skill-btn">CSS</button>
-                    <button class="skill-btn">JavaScript</button>
-                    <button class="skill-btn">React JS</button>
-                    <button class="skill-btn">Express JS</button>
-                    <button class="skill-btn">Nmap</button>
-                    <button class="skill-btn">Metasploit</button>
-                    <button class="skill-btn">Wireshark</button>
-                    <button class="skill-btn">Burp Suite</button>
-                    <button class="skill-btn">SQL Injuction</button>
-                    <button class="skill-btn">XSS</button>
-                    <button class="skill-btn">Hydra</button>
-                    <button class="skill-btn">Aircrack-ng</button>
-                </div>
-             </div>
-         
-              <div id="work">
-                 <h1>works.</h1>
+            <h3>Networking</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">TCP/IP</span>
+            <span class="tag">OSI Model</span>
+            <span class="tag">Subnetting (CIDR)</span>
+            <span class="tag">DNS</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">VPN</span>
+            <span class="tag">NAT / PAT</span>
+            <span class="tag">ARP</span>
+            <span class="tag">Packet Analysis</span>
+          </div>
+        </div>
 
-                 <div class="project">
-                 <h2>SHIELD</h2>
-                 <div>
-                     <p>Built a Host-Based Intrusion Detection System (HIDS) that monitors local ports, processes, and log files for suspicious activity.
-                     Integrated Gemini AI for anomaly scoring and prioritized alerts to reduce false positives.
-                     Testing was done in isolated lab VMs with synthetic traffic to validate detection logic and response actions.
-                     Delivered detection signatures, automated alerting rules, and recommended mitigations (process isolation, file integrity checks, log centralization).
-                     Designed and documented with operational safety and compliance in mind — for authorized defensive use only.</p>
-                 </div>
-                 <button class="btn_one">visit project</button>
-                </div>
+        <!-- AWS Cloud -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <div class="skill-icon icon-cyan">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h3>AWS Cloud</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">AWS VPC</span>
+            <span class="tag">Public & Private Subnets</span>
+            <span class="tag">Route Tables</span>
+            <span class="tag">Internet Gateway</span>
+            <span class="tag">NAT Gateway</span>
+            <span class="tag">Security Groups</span>
+            <span class="tag">NACLs</span>
+            <span class="tag">Amazon EC2</span>
+            <span class="tag">Amazon S3</span>
+            <span class="tag">AWS IAM</span>
+          </div>
+        </div>
 
-                <div class="project">
-                 <h2>Keylogger</h2>
-                 <div>
-                     <p>Built a small Python keylogger in an isolated lab to study credential-harvesting techniques.
-                     Tests ran on VMs with synthetic data; no real user data was used.
-                     Documented artifacts and indicators of compromise useful for detection.
-                    Delivered detection rules and hardening recommendations (EDR, least privilege).
-                     Executed under authorized research conditions — never use on unauthorized systems.</p>
-                 </div>
-                  <button class="btn_one">visit project</button>
-                  <button class="btn_two">code</button>
-                </div>
+        <!-- Network Tools & Security -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <div class="skill-icon icon-green">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Network Tools & Security</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Wireshark</span>
+            <span class="tag">Nmap</span>
+            <span class="tag">Packet Capture</span>
+            <span class="tag">Port Scanning</span>
+            <span class="tag">Linux iptables</span>
+            <span class="tag">IDS / IPS (HIDS)</span>
+            <span class="tag">Kali Linux</span>
+            <span class="tag">MITRE ATT&CK</span>
+          </div>
+        </div>
 
-             </div>
-         
-              <div id="contact">
-                 <h1>contact.</h1> 
-                 <form id="contact-form">
-                     <input id="contact-name" type="text" name="name" placeholder="name" required>
-                     <input id="contact-email" type="email" name="email" placeholder="email" required><br>
-                     <textarea id="contact-message" name="message" placeholder="your message" required rows="5"></textarea><br>
-                     <button type="submit" class="btn_one">send</button>
-                 </form> 
-                 <div id="details">
-                    <!-- clickable phone -->
-                    <a class="btn_social" href="tel:9787932750" aria-label="Call 9787932750" title="Call 9787932750">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <!-- open user's mail client to send email to your address -->
-                    <a class="btn_social" href="mailto:rabijacksonjohn@gmail.com?subject=Portfolio%20Inquiry" aria-label="Email rabijacksonjohn@gmail.com" title="Email">
-                        <i class="fas fa-at"></i>
-                    </a>
-                    <!-- Instagram (update href to your profile) -->
-                    <a class="btn_social" href="https://www.instagram.com/rabi_jackson_john?igsh=M3B1MXRzeDlyOHA1" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <!-- LinkedIn (update href to your profile) -->
-                    <a class="btn_social" href="https://www.linkedin.com/in/rabi-jackson-j-794968238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>   
-             </div>
+        <!-- Systems & Programming -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <div class="skill-icon icon-purple">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <h3>Systems & Code</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">C</span>
+            <span class="tag">Linux (Ubuntu, CentOS)</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Gemini AI API</span>
+            <span class="tag">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="footer">
-        made by Rabi Jackson <br><br> 
-        <!-- <a href="https://imfunniee.github.io">imfunniee</a> -->
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Featured Work</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 1: SHIELD -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">SHIELD – Host-Based Intrusion Detection System</div>
+            <span class="project-badge">Python • Gemini AI • Security</span>
+          </div>
+          <p class="project-desc">
+            Designed and built a Python-based Host Intrusion Detection System (HIDS) for monitoring suspicious system and network activity.
+          </p>
+          <ul class="project-points">
+            <li>Monitors open network sockets and detects automated port scans.</li>
+            <li>Integrated Google Gemini AI API to analyze anomaly logs and classify threat severity levels.</li>
+            <li>Applies Linux firewall rules (iptables) for automated defense response actions.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Gemini AI API</span>
+              <span class="tag">iptables</span>
+              <span class="tag">Sockets</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rabijacksonjohn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AWS VPC Lab -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">AWS Multi-Tier VPC Network Infrastructure</div>
+            <span class="project-badge">AWS VPC • Cloud Networking</span>
+          </div>
+          <p class="project-desc">
+            Architected a secure, multi-tier AWS Virtual Private Cloud (VPC) network separating public ingress from private backend workloads.
+          </p>
+          <ul class="project-points">
+            <li>Configured custom CIDR allocations with public subnets (Internet Gateway) and private subnets.</li>
+            <li>Set up NAT Gateway routing so private instances can download patches without exposing inbound internet access.</li>
+            <li>Enforced strict stateful Security Groups and stateless perimeter NACL rules.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tag">AWS VPC</span>
+              <span class="tag">Route Tables</span>
+              <span class="tag">NAT Gateway</span>
+              <span class="tag">Security Groups</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rabijacksonjohn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> Architecture Notes
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Python Security Research -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">Python Endpoint Security Research Lab</div>
+            <span class="project-badge">Python • Defensive Detection</span>
+          </div>
+          <p class="project-desc">
+            Researched endpoint behavioral indicators and telemetry in a controlled lab environment.
+          </p>
+          <ul class="project-points">
+            <li>Studied attack techniques in isolation to understand defensive detection methods.</li>
+            <li>Analyzed behavioral monitoring concepts and indicators of compromise (IoCs).</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Endpoint Monitoring</span>
+              <span class="tag">IoC Detection</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rabijacksonjohn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> Research Notes
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<script src="index.js" type="text/javascript"></script>
-<!-- view-work handler moved to index.js -->
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Track Record</div>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Left: Experience -->
+        <div class="timeline-column">
+          <h3><i class="fas fa-briefcase" style="color: var(--aws-orange);"></i> Experience</h3>
+
+          <div class="item-card">
+            <div class="item-role">Cybersecurity & IT Support Intern</div>
+            <div class="item-org">Thanjavur, India</div>
+            <div class="item-date">Feb 2025 – Jul 2025</div>
+            <ul class="item-list">
+              <li>Performed network monitoring, traffic analysis, and port scanning using Wireshark and Nmap.</li>
+              <li>Developed a Python-based HIDS for monitoring suspicious network activity.</li>
+              <li>Integrated Gemini AI API for automated alert classification and anomaly analysis.</li>
+              <li>Provided Tier 1/2 IT support, system configuration, and Linux server maintenance.</li>
+            </ul>
+          </div>
+
+          <div class="item-card" style="margin-top: 0.5rem;">
+            <div class="item-role">Training & CTF Labs</div>
+            <div class="item-org">Hands-on Practice</div>
+            <div class="item-date">Ongoing</div>
+            <ul class="item-list">
+              <li><strong>TryHackMe</strong>: Completed SOC Level 1 Path (alert triage, log analysis, monitoring).</li>
+              <li><strong>HackTheBox</strong>: CTF challenges focused on network enumeration and penetration testing basics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Education -->
+        <div class="timeline-column">
+          <h3><i class="fas fa-graduation-cap" style="color: var(--cyan);"></i> Education</h3>
+
+          <div class="item-card">
+            <div class="item-role">Master of Computer Applications (MCA)</div>
+            <div class="item-org">Periyar Maniammai Institute of Science and Technology, Thanjavur</div>
+            <div class="item-date">2023 – 2025 • GPA: 7.3 / 10.0</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Focus on Computer Networks, Operating Systems, and Cloud Architectures.
+            </p>
+          </div>
+
+          <div class="item-card" style="margin-top: 0.5rem;">
+            <div class="item-role">Bachelor of Computer Applications (BCA)</div>
+            <div class="item-org">Annai Vailankanni College, Thanjavur</div>
+            <div class="item-date">2020 – 2023 • GPA: 8.3 / 10.0</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Graduated with First Class Distinction. Strong foundation in programming, C, Python, and data structures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Certification Status</div>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="certs-row">
+        <!-- AWS Cert -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div>
+            <div class="cert-title">AWS Certified Cloud Practitioner (CLF-C02)</div>
+            <div class="cert-status">● Course & Certification In Progress</div>
+            <div class="cert-desc">
+              Focus on AWS Cloud Concepts, Security & Shared Responsibility, VPC & Core Services, and Billing.
+            </div>
+          </div>
+        </div>
+
+        <!-- TryHackMe -->
+        <div class="cert-card">
+          <div class="cert-icon" style="color: var(--green); background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.25);">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div>
+            <div class="cert-title">TryHackMe – SOC Level 1 Path</div>
+            <div class="cert-status" style="color: var(--green);">● Completed</div>
+            <div class="cert-desc">
+              Hands-on training in alert triage, log analysis, network monitoring, and security operations fundamentals.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="border-bottom: none;">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Direct Contact</div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">
+          Seeking entry-level Cloud Support, Network Engineer, NOC, or Network Security roles. Ready for immediate joining.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Email -->
+        <div class="contact-card copy-email-btn">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-meta">
+            <span>Email (Click to Copy)</span>
+            <strong>rabijacksonjohn@email.com</strong>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <a href="tel:+919787932750" class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-meta">
+            <span>Phone</span>
+            <strong>+91-9787932750</strong>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/rabi-jackson-j/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon" style="color: #0a66c2;">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="contact-meta">
+            <span>LinkedIn</span>
+            <strong>rabi-jackson-j</strong>
+          </div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Rabijacksonjohn" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon" style="color: #cbd5e1;">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-meta">
+            <span>GitHub</span>
+            <strong>Rabijacksonjohn</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Rabi Jackson J • Thanjavur, Tamil Nadu, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
